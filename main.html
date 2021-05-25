@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="styleshhet" href="style.css">
+        
+        <!-- Local Files -->
+        <script src = "map.js"></script> 
+        <script src = "Data/houses.js"></script>
+    </head>
+
+    <body>
+    <nav class = "navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">GIS-E</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class= "collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class = "nav-link" onclick="go_to_city(1);">Durham</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class = "nav-link" onclick="go_to_city(2);">Leeds</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class = "nav-link" onclick="go_to_city(3); console.log('been clicked');">Newcastle</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+      
+        <div id="mapid" style="width: 100%; height: 920px"></div>
+
+        <script>
+        // Global variables
+        var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+        function loadMap() {
+                loadLeafletMap();
+                //window.addEventListener('resize', setMapClickEvent);
+                addExampleData();     
+            }
+
+        document.addEventListener('DOMContentLoaded', function() {
+                // functions that happen on load
+                loadMap();
+            }, false);
+        
+        </script>
+    </body>
+</html>
+
+
+
+<label for="title"
