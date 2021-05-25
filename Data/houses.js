@@ -3,13 +3,13 @@ var data = {
     "name": "houses",
     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
     "features": [
-    { "type": "Feature", "properties": { "id": 1, "address_1": "1 Kepier Heights", "postcode": "DH1 1LN", "bedrooms": 6, "bathrooms": 3, "cost_week": 110, "bills_week": 15, "owner": "Private", "score": 7 }, "geometry": { "type": "Point", "coordinates": [ -1.569545692233133, 54.779320216293264 ] } },
-    { "type": "Feature", "properties": { "id": 2, "address_1": "22 Elis Street", "postcode": "DH1 2NH", "bedrooms": 4, "bathrooms": 2, "cost_week": 90, "bills_week": 10, "owner": "Private", "score": 5 }, "geometry": { "type": "Point", "coordinates": [ -1.565199516347614, 54.779477641698215 ] } },
-    { "type": "Feature", "properties": { "id": 3, "address_1": "39 Claypath", "postcode": "DH1 3KL", "bedrooms": 6, "bathrooms": 4, "cost_week": 120, "bills_week": 10, "owner": "Private", "score": 8 }, "geometry": { "type": "Point", "coordinates": [ -1.571830932915363, 54.778481643057802 ] } },
-    { "type": "Feature", "properties": { "id": 4, "address_1": "7 Mount Joy Crescent", "postcode": "DH1 2KL", "bedrooms": 4, "bathrooms": 2, "cost_week": 140, "bills_week": 20, "owner": "Private", "score": 8 }, "geometry": { "type": "Point", "coordinates": [ -1.568782230465365, 54.76938903976702 ] } },
-    { "type": "Feature", "properties": { "id": 5, "address_1": "67 Crossgate", "postcode": "DH1 8PH", "bedrooms": 3, "bathrooms": 1, "cost_week": 125, "bills_week": 0, "owner": "Bill Free Homes", "score": 8 }, "geometry": { "type": "Point", "coordinates": [ -1.579855512870659, 54.776150100785891 ] } },
-    { "type": "Feature", "properties": { "id": 6, "address_1": "4 Mowbray Street", "postcode": "DH1 8KN", "bedrooms": 4, "bathrooms": 2, "cost_week": 110, "bills_week": 13, "owner": "Private", "score": 6 }, "geometry": { "type": "Point", "coordinates": [ -1.586519855013297, 54.777770656425027 ] } },
-    { "type": "Feature", "properties": { "id": 7, "address_1": "1 Redhills Lane", "postcode": "DH1 9JN", "bedrooms": 6, "bathrooms": 2, "cost_week": 100, "bills_week": 10, "owner": "Private", "score": 7 }, "geometry": { "type": "Point", "coordinates": [ -1.588275199724636, 54.776817872601647 ] } }
+    { "type": "Feature", "properties": { "id": 1, "address_1": "1 Kepier Heights", "postcode": "DH1 1LN", "bedrooms": 6, "bathrooms": 3, "cost_week": 110, "bills_week": 15, "owner": "Private", "score": 4 }, "geometry": { "type": "Point", "coordinates": [ -1.569545692233133, 54.779320216293264 ] } },
+    { "type": "Feature", "properties": { "id": 2, "address_1": "22 Elis Street", "postcode": "DH1 2NH", "bedrooms": 4, "bathrooms": 2, "cost_week": 90, "bills_week": 10, "owner": "Private", "score": 3 }, "geometry": { "type": "Point", "coordinates": [ -1.565199516347614, 54.779477641698215 ] } },
+    { "type": "Feature", "properties": { "id": 3, "address_1": "39 Claypath", "postcode": "DH1 3KL", "bedrooms": 6, "bathrooms": 4, "cost_week": 120, "bills_week": 10, "owner": "Private", "score": 1 }, "geometry": { "type": "Point", "coordinates": [ -1.571830932915363, 54.778481643057802 ] } },
+    { "type": "Feature", "properties": { "id": 4, "address_1": "7 Mount Joy Crescent", "postcode": "DH1 2KL", "bedrooms": 4, "bathrooms": 2, "cost_week": 140, "bills_week": 20, "owner": "Private", "score": 5 }, "geometry": { "type": "Point", "coordinates": [ -1.568782230465365, 54.76938903976702 ] } },
+    { "type": "Feature", "properties": { "id": 5, "address_1": "67 Crossgate", "postcode": "DH1 8PH", "bedrooms": 3, "bathrooms": 1, "cost_week": 125, "bills_week": 0, "owner": "Bill Free Homes", "score": 3 }, "geometry": { "type": "Point", "coordinates": [ -1.579855512870659, 54.776150100785891 ] } },
+    { "type": "Feature", "properties": { "id": 6, "address_1": "4 Mowbray Street", "postcode": "DH1 8KN", "bedrooms": 4, "bathrooms": 2, "cost_week": 110, "bills_week": 13, "owner": "Private", "score": 4 }, "geometry": { "type": "Point", "coordinates": [ -1.586519855013297, 54.777770656425027 ] } },
+    { "type": "Feature", "properties": { "id": 7, "address_1": "1 Redhills Lane", "postcode": "DH1 9JN", "bedrooms": 6, "bathrooms": 2, "cost_week": 100, "bills_week": 10, "owner": "Private", "score": 1 }, "geometry": { "type": "Point", "coordinates": [ -1.588275199724636, 54.776817872601647 ] } }
     ]
     };
 
@@ -23,5 +23,22 @@ var data = {
 
     function housePopUpLayout(address, postcode, bedrooms, bathrooms, cost_week, bills_week, owner, score) {
         // create the html layout of this
-        var popup = 
+        var stars = "";
+
+        for(var i=0; i<5;i++) {
+            var icoClass = i<score ? "fa fa-star" : "fa fa-star-o"; // if score less than i than it is a full star
+            stars += "<i class='"+ icoClass +"'></i>"; // concatenate stars
+        }   
+
+     
+        var popup = '<p>Address: '+address+
+        '</p><p>Postcode: ' +postcode+ 
+        '</p><p>Bedrooms: ' +bedrooms+ 
+        '</p><p>Bathrooms: ' +bathrooms+ 
+        '</p><p>Cost Per Week: ' +cost_week+ 
+        '</p><p>Bills Per Week: ' +bills_week+
+        '</p><p>Landlord Type: ' +owner+
+        '</p><p>Score: '+stars; 
+
+        return popup
     }
