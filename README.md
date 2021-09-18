@@ -1,1 +1,1 @@
-# homeadvisor, helping you find the perfect home.
+# home advisor, the website that helps you find the perfect home.
