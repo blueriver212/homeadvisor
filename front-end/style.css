@@ -1,23 +1,48 @@
 *{
+    height: 2500px;
+    width: 1024px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
+body, html{
+    text-align: center;
+    display: flex;
+}
+
+body{
+    height: 2500px;
+    width: 1024px;
+    background-color: #fff;
+    display: flex;
+}
+
+/* we will be transferring to vh for positioning replacing px */
 
 .title{
-    background-image: linear-gradient(90deg, red, blue);
+    text-align: center;
+    background-image: linear-gradient(90deg, #E88B35, #B74B08);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     position: absolute;
-    top: 50px;
+    top: 300px;
     bottom: 50px;
-    right: 50px;
-    left: 50px;
+    right: 420px;
+    display: flex;
 }
 
-.houses{
-    top: 50px;
-    height: 1000px;
-    width: 50px;
+.London{
+    position: absolute;
+    top: 5px;
+    height: 100% !important;
+    width: auto;
+}
+
+.topName{
+    font-family: poppins;
+    font-weight: normal;
+    position: absolute;
+    top: 20px;
+    left: -410px;
 }
