@@ -1,19 +1,18 @@
 *{
-    height: 2500px;
-    width: 1024px;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
 body, html{
     text-align: center;
     display: flex;
+    height: 100%;
 }
 
 body{
+    text-align: center;
     height: 2500px;
     width: 1024px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     display: flex;
 }
 
@@ -24,18 +23,19 @@ body{
     background-image: linear-gradient(90deg, #E88B35, #B74B08);
     background-clip: text;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     color: transparent;
     position: absolute;
-    top: 300px;
-    bottom: 50px;
-    right: 420px;
+    top: 1vh;
+    bottom: 2vh;
+    right: 3vh;
     display: flex;
 }
 
-.London{
+.london{
     position: absolute;
     top: 5px;
-    height: 100% !important;
+    height: 100%;
     width: auto;
 }
 
@@ -45,4 +45,14 @@ body{
     position: absolute;
     top: 20px;
     left: -410px;
+}
+
+.q0{
+    text-align: left !important;
+    font-size: 70px;
+    font-family: poppins;
+    position: absolute;
+    top: 750px;
+    right: 100px;
+    left: 10px;
 }
