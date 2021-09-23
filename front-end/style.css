@@ -19,24 +19,27 @@ body{
 /* we will be transferring to vh for positioning replacing px */
 
 .title{
+    z-index: 2;
     text-align: center;
-    background-image: linear-gradient(90deg, #E88B35, #B74B08);
+    background-image: linear-gradient(90deg, #35a6e8, #0828b7);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     color: transparent;
     position: absolute;
-    top: 1vh;
-    bottom: 2vh;
-    right: 3vh;
+    top: 200px;
+    bottom: 0;
+    right: 700px;
     display: flex;
 }
 
 .london{
+    z-index: 1;
     position: absolute;
-    top: 5px;
+    top: 0px;
+    left: 0px;
     height: 100%;
-    width: auto;
+    width: 2000px;
 }
 
 .topName{
