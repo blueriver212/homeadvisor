@@ -73,11 +73,28 @@ body{
     left: 100px;
 }
 
-#button{
+.button0{
+    font-weight: bold;
+    text-align: center;
     z-index: 3;
+    background: linear-gradient(150deg, #35a6e8,  #0828b7);
+    color: transparent;
+    background-clip: button-box;
+    -webkit-background-clip: button-box;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
     position: absolute;
-    top: 400px;
-    right: 900px;
-    color:rgb(0, 0, 0);
-    text-emphasis-color: rgb(73, 73, 73);
+    right: 0px;
+    left: 850px;
+    top: 350px;
 }
