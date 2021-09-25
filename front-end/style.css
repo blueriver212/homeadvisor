@@ -39,16 +39,20 @@ body{
     top: 0px;
     left: 0px;
     height: 100%;
-    width: 2000px;
+    width: 100%;
+    opacity: 0.75;
 }
 
 .topName{
     z-index: 3;
-    font-family: roboto, sans-serif;
     font-weight: normal;
     position: absolute;
-    top: 20px;
-    left: -410px;
+    top: 10px;
+    left: 30px;
+    color:rgba(65, 63, 63, 0.774);
+    font-weight: light;
+    font-size: 10px;
+    font-family: poppins;
 }
 
 
