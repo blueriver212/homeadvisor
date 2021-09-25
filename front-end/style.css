@@ -43,19 +43,32 @@ body{
 }
 
 .topName{
-    font-family: poppins;
+    z-index: 3;
+    font-family: roboto, sans-serif;
     font-weight: normal;
     position: absolute;
     top: 20px;
     left: -410px;
 }
 
+
 .q0{
-    text-align: left !important;
+    text-align: center;
     font-size: 70px;
     font-family: poppins;
     position: absolute;
-    top: 750px;
-    right: 100px;
-    left: 10px;
+    top: 1000px;
+    right: 0;
+    left: 100px;
+}
+
+.a0{
+    color:rgb(65, 63, 63);
+    text-align: center;
+    font-size: 50px;
+    font-family: poppins;
+    position: absolute;
+    top: 1400px;
+    right: 00px;
+    left: 100px;
 }
