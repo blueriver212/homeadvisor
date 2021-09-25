@@ -43,6 +43,77 @@ body{
     color: white;
 }
 
+.welcome{
+    font-size: 40px;
+    position: absolute;
+    top: 40px;
+    right: 650px;
+    color: white;
+}
+
+.uname{
+    z-index: 1;
+    position: absolute;
+    height: 5vh;
+    width: 30vh;
+    background-color: rgba(180, 175, 175, 0.938);
+    border-radius: 6px;
+    right: 800px;
+    top: 325px;
+}
+
+.email{
+    z-index: 1;
+    position: absolute;
+    height: 5vh;
+    width: 30vh;
+    background-color: rgba(180, 175, 175, 0.938);
+    border-radius: 6px;
+    right: 800px;
+    top: 425px;
+}
+
+.pswd{
+    z-index: 1;
+    position: absolute;
+    height: 5vh;
+    width: 30vh;
+    background-color: rgba(180, 175, 175, 0.938);
+    border-radius: 6px;
+    right: 800px;
+    top: 525px;
+}
+
+.euname{
+    font-size: 20px;
+    z-index: 1;
+    position: absolute;
+    color: rgba(58, 56, 56, 0.938);
+    border-radius: 6px;
+    right: 960px;
+    top: 325px;
+}
+
+.eEmail{
+    font-size: 20px;
+    z-index: 4;
+    position: absolute;
+    color: rgba(58, 56, 56, 0.938);
+    border-radius: 6px;
+    right: 1000px;
+    top: 425px;
+}
+
+.ePassword{
+    font-size: 20px;
+    z-index: 4;
+    position: absolute;
+    color: rgba(58, 56, 56, 0.938);
+    border-radius: 6px;
+    right: 960px;
+    top: 525px;
+}
+
 a:link{
     color: white
 }
