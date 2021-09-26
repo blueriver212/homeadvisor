@@ -85,11 +85,12 @@ body{
     color: transparent;
     background-clip: button-box;
     -webkit-background-clip: button-box;
+    -moz-background-clip: button-box;
+    -ms-background-clip: button-box;
     border-radius: 8px;
     border: none;
     color: white;
     padding: 0px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
