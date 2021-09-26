@@ -45,6 +45,63 @@ body{
     color: white;
 }
 
+.uname{
+    z-index: 1;
+    position: absolute;
+    height: 5vh;
+    width: 30vh;
+    background-color: rgba(180, 175, 175, 0.938);
+    border-radius: 6px;
+    right: 800px;
+    top: 325px;
+}
+
+.email{
+    z-index: 1;
+    position: absolute;
+    height: 5vh;
+    width: 30vh;
+    background-color: rgba(180, 175, 175, 0.938);
+    border-radius: 6px;
+    right: 800px;
+    top: 425px;
+}
+
+.pswd{
+    z-index: 1;
+    position: absolute;
+    height: 5vh;
+    width: 30vh;
+    background-color: rgba(180, 175, 175, 0.938);
+    border-radius: 6px;
+    right: 800px;
+    top: 525px;
+}
+
+.createacc{
+    z-index: 4;
+    text-align: center;
+    background: linear-gradient(150deg, #35a6e8, #0828b7);
+    color: transparent;
+    background-clip: button-box;
+    -webkit-background-clip: button-box;
+    -moz-background-clip: button-box;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 0px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    right: 865px;
+    top: 600px;
+}
+
 a:link{
     color: white
 }
