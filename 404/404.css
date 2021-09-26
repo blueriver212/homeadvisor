@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    display: flex;
+    font-family: sans-serif;
+    height: 720px;
+    width: 1024px;
+}
+
+.title{
+    background: linear-gradient(90deg, #35a6e8, #0828b7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    color: transparent;
+    font-size: 10vh;
+    position: absolute;
+    top: 10%;
+    right: 40%
+}
+
+.joke0{
+    color: #35a6e8;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+}

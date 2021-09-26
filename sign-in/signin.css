@@ -27,7 +27,7 @@ body{
     height: 50vh;
     width: 40vh;
     background-color: rgb(255, 255, 255);
-    filter: drop-shadow(5px 10px 4px #313135);
+    filter: drop-shadow(2px 4px 2px #313135);
     border-radius: 6px;
     right: 750px;
     top: 200px;
