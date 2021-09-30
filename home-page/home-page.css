@@ -1,5 +1,92 @@
 body{
     text-align: center;
     display: flex;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    height: 2000px;
+    width: 1024px;
+}
+
+.title{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    font-size: 60px;
+}
+
+.recentview{
+    position: absolute;
+    top: 21%;
+    left: 3%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.box0{
+    width: 245px;
+    height: 216px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    background: #EBEBEB;
+    border-radius: 8px;
+  }
+
+  .box1{
+    width: 245px;
+    height: 216px;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    background: #EBEBEB;
+    border-radius: 8px;
+  }
+
+  .box2{
+    width: 245px;
+    height: 216px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    background: #EBEBEB;
+    border-radius: 8px;
+  }
+
+  .box3{
+    width: 245px;
+    height: 216px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    background: #EBEBEB;
+    border-radius: 8px;
+  }
+
+  .box4{
+    width: 245px;
+    height: 216px;
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    background: #EBEBEB;
+    border-radius: 8px;
+    z-index: 5;
+  }
+
+  .box5{
+    width: 245px;
+    height: 216px;
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    background: #EBEBEB;
+    border-radius: 8px;
+    z-index: 9;
+  }
+
+  .suggest{
+    position: absolute;
+    top: 65%;
+    left: 3%;
+    font-size: 40px;
+    font-weight: bold;
 }
