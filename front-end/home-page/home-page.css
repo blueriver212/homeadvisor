@@ -90,3 +90,39 @@ body{
     font-size: 40px;
     font-weight: bold;
 }
+
+.housen0{
+    position: absolute;
+    top: 57%;
+    left: 5.2%;
+}
+
+.housen1{
+    position: absolute;
+    top: 57%;
+    left: 20.2%;
+}
+
+.housen2{
+    position: absolute;
+    top: 57%;
+    left: 35.2%;
+}
+
+.housen3{
+    position: absolute;
+    top: 57%;
+    left: 50.2%;
+}
+
+.housen4{
+    position: absolute;
+    top: 57%;
+    left: 65.2%;
+}
+
+.housen5{
+    position: absolute;
+    top: 57%;
+    left: 80.2%;
+}
