@@ -13,41 +13,42 @@ body{
     -moz-background-clip: text;
     -ms-background-clip: text;
     color: transparent;
-    font-size: 10vh;
+    font-size: 15vh;
     position: absolute;
-    top: 10%;
-    right: 40%
+    top: 1%;
+    right: 35%
 }
 
 .joke0{
-    color: #35a6e8;
+    color: #000000;
     position: absolute;
-    top: 50%;
-    right: 30%;
+    top: 52%;
+    right: 27%;
+    font-size: 2vh
 }
 
 .return{
     font-size: 35px;
     display: inline-block;
     text-align: center;
-    color: #0e6da3;
+    color: #000000;
     position: absolute;
     top: 60%;
     right: 32%;
 }
 
 a:link{
-    color: #0e6da3
+    color: #000000
 }
 
 a:visited{
-    color: #0e6da3
+    color: #000000
 }
 
 a:hover{
-    color: #0e6da3
+    color: #363636
 }
 
 a:active{
-    color: #0e6da3
+    color: #000000
 }
