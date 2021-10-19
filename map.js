@@ -21,3 +21,4 @@ function go_to_city (val) {
         mymap.flyTo([54.978252, -1.617780], 15);
     }
 } 
+
