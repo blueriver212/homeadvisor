@@ -10,13 +10,11 @@ body, html{
 
 body{
     text-align: center;
-    height: 2500px;
     width: 1024px;
     background-color: rgb(255, 255, 255);
     display: flex;
 }
 
-/* we will be transferring to vh for positioning replacing px */
 
 .title{
     z-index: 2;
@@ -50,31 +48,8 @@ body{
     top: 10px;
     left: 30px;
     color:rgba(65, 63, 63, 0.774);
-    font-weight: light;
+    font-weight: normal;
     font-size: 10px;
-    font-family: poppins;
-}
-
-
-.q0{
-    text-align: center;
-    font-size: 70px;
-    font-family: poppins;
-    position: absolute;
-    top: 1000px;
-    right: 0;
-    left: 100px;
-}
-
-.a0{
-    color:rgb(65, 63, 63);
-    text-align: center;
-    font-size: 50px;
-    font-family: poppins;
-    position: absolute;
-    top: 1400px;
-    right: 00px;
-    left: 100px;
 }
 
 .button0{
