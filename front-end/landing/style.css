@@ -3,7 +3,6 @@
 }
 
 body, html{
-    text-align: center;
     display: flex;
     height: 100%;
 }
@@ -114,6 +113,7 @@ body{
     overflow: hidden;
     inline-size: 50vh;
     overflow-wrap: break-word;
+    text-align: left !important;
 }
 
 .parabox{
@@ -172,8 +172,8 @@ body{
     border-radius: 55%;
     background-color: rgb(247, 187, 76);
     position: absolute;
-    top: 200%;
-    right: 20%;
+    top: 205%;
+    right: 25%;
     z-index: 1;
 }
 
@@ -183,8 +183,8 @@ body{
     border-radius: 55%;
     background-color: rgb(247, 110, 76);
     position: absolute;
-    top: 195%;
-    right: 12%;
+    top: 198%;
+    right: 9%;
     z-index: 1;
 }
 
@@ -200,6 +200,7 @@ body{
 
 .featurePara{
     position: absolute;
+    text-align: left !important;
     top: 215%;
     left: 6%;
     z-index: 4;
@@ -235,4 +236,5 @@ body{
     left: 61%;
     z-index: 4;
     font-size: 3vh;
+    text-align: left !important;
 }
