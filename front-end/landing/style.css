@@ -25,9 +25,8 @@ body{
     -moz-background-clip: text;
     color: transparent;
     position: absolute;
-    top: 200px;
-    bottom: 0;
-    right: 700px;
+    top: 20%;
+    left: 35%;
     display: flex;
 }
 
@@ -49,7 +48,7 @@ body{
     left: 30px;
     color:rgba(65, 63, 63, 0.774);
     font-weight: normal;
-    font-size: 10px;
+    font-size: 1.5vh;
 }
 
 .button0{
@@ -79,3 +78,20 @@ body{
     top: 350px;
 }
 
+.egMap{
+    position: absolute;
+    top: 115%;
+    right: 0%;
+    border-radius: 16px 0px 0px 0px;
+    background: linear-gradient(150deg, #fff, transparent);
+}
+
+.para0{
+    text-align: left !important;
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    font-weight: bold;
+    font-size: 10vh;
+    z-index: 4;
+}
