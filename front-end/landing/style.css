@@ -18,8 +18,8 @@ body{
 
 
 .title{
+    text-align: left;
     z-index: 2;
-    text-align: center;
     background-image: linear-gradient(90deg, #35a6e8, #0828b7);
     background-clip: text;
     -webkit-background-clip: text;
@@ -27,57 +27,64 @@ body{
     color: transparent;
     position: absolute;
     font-size: 10vh;
-    top: 10%;
+    top: 30%;
     left: 10%;
     display: flex;
 }
 
-.london{
-    z-index: 1;
+.topbox{
+    height: 60px;
+    width: 700px;
+    border-radius: 16px;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    opacity: 0.75;
+    top: 2%;
+    left: 30%;
+    background-color: rgba(141, 141, 141, 0.089);
+}
+
+.emailEnter{
+    padding: 0.5em;
+    margin: 0;
+    height: 5vh;
+    width: 50vh;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    border-radius: 16px;
+    border: 0.1px solid;
+    color: grey;
+    background-color: rgba(255, 255, 255, 0.493);
 }
 
 .topName{
-    z-index: 3;
+    z-index: 5;
     font-weight: normal;
     position: absolute;
-    top: 10px;
-    left: 30px;
+    top: 1%;
+    left: 1%;
     color:rgba(65, 63, 63, 0.774);
     font-weight: normal;
-    font-size: 1.5vh;
+    font-size: 1.7vh;
 }
 
 .button0{
     font-weight: bold;
     text-align: center;
     z-index: 3;
-    background: linear-gradient(150deg, #35a6e8,  #0828b7);
-    color: transparent;
-    background-clip: button-box;
-    -webkit-background-clip: button-box;
-    -moz-background-clip: button-box;
-    -ms-background-clip: button-box;
-    border-radius: 8px;
+    background:#5381c7;
+    border-radius: 6px;
     border: none;
     color: white;
     padding: 0px;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    width: 150px;
+    width: 15vh;
     height: 40px;
     position: absolute;
-    right: 0px;
-    left: 850px;
-    top: 350px;
+    left: 27%;
+    top: 65.7%;
+    font-weight: normal;
 }
 
 .egMap{
@@ -138,9 +145,11 @@ body{
     width: 250px;
     border-radius: 55%;
     background-color: rgb(76, 88, 247);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
     position: absolute;
-    top: 207%;
-    left: 20%;
+    top: 215%;
+    left: 4%;
     z-index: 1;
 }
 
@@ -149,11 +158,37 @@ body{
     width: 300px;
     border-radius: 55%;
     background-color: rgb(76, 247, 119);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
     position: absolute;
     top: 190%;
     left: 26%;
     z-index: 1;
 }
+
+.frostcircle1{
+    height: 350px;
+    width: 350px;
+    border-radius: 55%;
+    background-color: rgb(247, 187, 76);
+    position: absolute;
+    top: 200%;
+    right: 20%;
+    z-index: 1;
+}
+
+.frostcircle2{
+    height: 260px;
+    width: 260px;
+    border-radius: 55%;
+    background-color: rgb(247, 110, 76);
+    position: absolute;
+    top: 195%;
+    right: 12%;
+    z-index: 1;
+}
+
+
 
 .featuretext{
     position: absolute;
@@ -183,6 +218,7 @@ body{
     position: absolute;
     top: 205%;
     left: 60%;
+    z-index: 2;
 }
 
 .featuretext0{

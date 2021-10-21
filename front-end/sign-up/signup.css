@@ -15,10 +15,7 @@ body{
     position: absolute;
     top: 210px;
     right: 875px;
-    background: linear-gradient(90deg, #35a6e8, #0828b7);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: white;
 }
 
 .signupbox{
@@ -26,7 +23,11 @@ body{
     position: absolute;
     height: 50vh;
     width: 40vh;
-    background-color: rgb(255, 255, 255);
+    background: rgba(143, 143, 143, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(54, 54, 54, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
     border-radius: 6px;
     right: 750px;
     top: 200px;
