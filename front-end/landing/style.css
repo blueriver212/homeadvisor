@@ -98,11 +98,31 @@ body{
     z-index: 4;
 }
 
+.subPara{
+    position: absolute;
+    font-size: 3vh;
+    top: 142%;
+    left: 5%;
+    color: rgb(70, 70, 70);
+    overflow: hidden;
+    inline-size: 50vh;
+    overflow-wrap: break-word;
+}
+
+.parabox{
+    height: 300px;
+    width: 400px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    top: 140%;
+    left: 5%;
+}
+
 .frostBox{
     height: 30vh;
     width: 65vh;
-    background: rgba( 74, 144, 226, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(143, 143, 143, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(54, 54, 54, 0.37);
     backdrop-filter: blur( 7.5px );
     -webkit-backdrop-filter: blur( 7.5px );
     border-radius: 10px;
@@ -110,6 +130,29 @@ body{
     position: absolute;
     top: 205%;
     left: 5%;
+    z-index: 2;
+}
+
+.frostcircle{
+    height: 250px;
+    width: 250px;
+    border-radius: 55%;
+    background-color: rgb(76, 88, 247);
+    position: absolute;
+    top: 207%;
+    left: 20%;
+    z-index: 1;
+}
+
+.frostcircle0{
+    height: 300px;
+    width: 300px;
+    border-radius: 55%;
+    background-color: rgb(76, 247, 119);
+    position: absolute;
+    top: 190%;
+    left: 26%;
+    z-index: 1;
 }
 
 .featuretext{
@@ -124,6 +167,36 @@ body{
     position: absolute;
     top: 215%;
     left: 6%;
+    z-index: 4;
+    font-size: 3vh;
+}
+
+.frostBox0{
+    height: 30vh;
+    width: 65vh;
+    background: rgba(143, 143, 143, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(54, 54, 54, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: absolute;
+    top: 205%;
+    left: 60%;
+}
+
+.featuretext0{
+    position: absolute;
+    top: 199.5%;
+    left: 61%;
+    z-index: 4;
+    font-size: 10vh;
+}
+
+.featurePara0{
+    position: absolute;
+    top: 215%;
+    left: 61%;
     z-index: 4;
     font-size: 3vh;
 }
