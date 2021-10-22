@@ -1,8 +1,6 @@
 body{
     font-family: sans-serif;
-    background: linear-gradient(90deg, #35a6e8, #0828b7) fixed;
-    background-clip: none;
-    -webkit-background-clip: none;
+    background-color: white;
     text-align: center;
     display: inline;
     height: 1024px;
@@ -13,12 +11,9 @@ body{
     z-index: 2;
     text-align: center;
     position: absolute;
-    top: 210px;
-    right: 880px;
-    background: linear-gradient(90deg, #35a6e8, #0828b7);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    top: 22.5%;
+    left: 43.5%;
+    color: black;
 }
 
 .signinbox{
@@ -26,11 +21,14 @@ body{
     position: absolute;
     height: 50vh;
     width: 40vh;
-    background-color: rgb(255, 255, 255);
-    filter: drop-shadow(2px 4px 2px #313135);
+    background: rgba(143, 143, 143, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(54, 54, 54, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
     border-radius: 6px;
-    right: 750px;
-    top: 200px;
+    left: 40%;
+    top: 22%;
 }
 
 .noacc{
@@ -41,7 +39,7 @@ body{
     position: absolute;
     top: 73%;
     right: 770px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .welcome{
@@ -109,17 +107,17 @@ body{
 
 
 a:link{
-    color: white
+    color: rgb(0, 0, 0)
 }
 
 a:visited{
-    color: white
+    color: rgb(0, 0, 0)
 }
 
 a:hover{
-    color: white
+    color: rgb(77, 75, 75)
 }
 
 a:active{
-    color: white;
+    color: rgb(0, 0, 0);
 }
