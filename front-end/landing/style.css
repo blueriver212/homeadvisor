@@ -3,7 +3,6 @@
 }
 
 body, html{
-    text-align: center;
     display: flex;
     height: 100%;
 }
@@ -71,7 +70,7 @@ body{
     font-weight: bold;
     text-align: center;
     z-index: 3;
-    background:#5381c7;
+    background:#679dee;
     border-radius: 6px;
     border: none;
     color: white;
@@ -114,6 +113,7 @@ body{
     overflow: hidden;
     inline-size: 50vh;
     overflow-wrap: break-word;
+    text-align: left !important;
 }
 
 .parabox{
@@ -157,7 +157,7 @@ body{
     height: 300px;
     width: 300px;
     border-radius: 55%;
-    background-color: rgb(76, 247, 119);
+    background-color: rgb(76, 170, 247);
     backdrop-filter: blur( 7.5px );
     -webkit-backdrop-filter: blur( 7.5px );
     position: absolute;
@@ -170,10 +170,10 @@ body{
     height: 350px;
     width: 350px;
     border-radius: 55%;
-    background-color: rgb(247, 187, 76);
+    background-color: rgb(27, 171, 255);
     position: absolute;
-    top: 200%;
-    right: 20%;
+    top: 206%;
+    right: 25%;
     z-index: 1;
 }
 
@@ -181,10 +181,10 @@ body{
     height: 260px;
     width: 260px;
     border-radius: 55%;
-    background-color: rgb(247, 110, 76);
+    background-color:  rgb(76, 136, 247);
     position: absolute;
-    top: 195%;
-    right: 12%;
+    top: 198%;
+    right: 9%;
     z-index: 1;
 }
 
@@ -200,6 +200,7 @@ body{
 
 .featurePara{
     position: absolute;
+    text-align: left !important;
     top: 215%;
     left: 6%;
     z-index: 4;
@@ -235,4 +236,5 @@ body{
     left: 61%;
     z-index: 4;
     font-size: 3vh;
+    text-align: left !important;
 }
