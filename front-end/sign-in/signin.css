@@ -38,8 +38,27 @@ body{
     z-index: 2;
     position: absolute;
     top: 73%;
-    right: 770px;
+    left: 40.5%;
     color: rgb(0, 0, 0);
+}
+
+.noaccclick{
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.forgotPasswd{
+    font-size: 1.5vh;
+    position: absolute;
+    top: 63%;
+    left: 42%;
+    z-index: 4;
+    font-weight: normal
+}
+
+.forgotPasswdclick{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .welcome{
@@ -59,10 +78,11 @@ body{
     background: #eee;
     border-radius: 6px;
     border: none;
-    right: 800px;
-    top: 325px;
-    font-weight: bold;
+    left: 42.5%;
+    top: 35%;
+    font-weight: normal;
     text-align: left;
+    font-weight: normal
 }
 
 .Password{
@@ -73,17 +93,18 @@ body{
     background: #eee;
     border-radius: 6px;
     border: none;
-    right: 800px;
-    top: 425px;
-    font-weight: bold;
+    left: 42.5%;
+    top: 45%;
+    font-weight: normal;
     text-align: left;
+    font-weight: normal
 }
 
 .signin0{
     font-weight: bold;
     text-align: center;
     z-index: 3;
-    background: linear-gradient(150deg, #35a6e8,#0828b7);
+    background: linear-gradient(90deg, #49b81dc2, rgb(51, 255, 68));
     color: transparent;
     background-clip: button-box;
     -webkit-background-clip: button-box;
@@ -97,27 +118,51 @@ body{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    width: 150px;
-    height: 40px;
+    width: 30vh;
+    height: 5vh;
     position: absolute;
-    top: 525px;
-    right: 870px;
+    top: 55%;
+    right: 42.8%;
     text-decoration: none !important;
+}
+
+.blob0{
+    height: 30vh;
+    width: 30vh;
+    background-color: #63f02cc2;
+    border-radius: 50%;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+}
+
+.blob1{
+    height: 30vh;
+    width: 30vh;
+    background-color: rgb(51, 255, 68);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 35%;
 }
 
 
 a:link{
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
 }
 
 a:visited{
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
 }
 
 a:hover{
-    color: rgb(77, 75, 75)
+    color: rgb(77, 75, 75);
+    text-decoration: underline;
 }
 
 a:active{
     color: rgb(0, 0, 0);
+    text-decoration: underline;
 }

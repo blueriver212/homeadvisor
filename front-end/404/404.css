@@ -16,7 +16,8 @@ body{
     font-size: 15vh;
     position: absolute;
     top: 1%;
-    right: 35%
+    right: 35%;
+    font-size: 30vh;
 }
 
 .joke0{
