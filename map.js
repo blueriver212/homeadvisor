@@ -22,3 +22,35 @@ function go_to_city (val) {
     }
 } 
 
+btnDurham.addEventListener('click', function() {
+    let url = 'http://localhost:3000/testhomes';
+
+    $.ajax({
+        url:url, 
+        crossDomain: true,
+        type: "GET",
+        success: function (res) {
+
+            //var data = res[0].features;
+            var data = res[0];
+            console.log(data);
+            
+            // for (var i = 0; i < data.length; i++) {
+            //     console.log(data[i].location);
+            //     var temp = data[i].location;
+            //     L.geoJSON(temp).addTo(mymap);
+            // }
+
+            // L.geoJSON(res, {pointToLayer: function (latlng) {
+            //     return L.marker(latlng)//.bindPopup("<b>"+feature.properties.review_id +"</b>")
+            //     },  
+            // }).addTo(mymap);
+
+            L.geoJSON(data, {pointToLayer: function(feature, latlng) {
+                return L.marker(latlng).bindPopup("<b>"+feature.properties.review_id +"</b>")
+            }}).addTo(mymap);
+            
+        }
+    });
+
+}, false)
