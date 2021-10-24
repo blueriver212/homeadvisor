@@ -344,3 +344,33 @@ body{
     font-size: 3vh;
     text-align: left !important;
 }
+
+.frostBox3{
+    height: 30vh;
+    width: 65vh;
+    background: rgba(143, 143, 143, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(54, 54, 54, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: absolute;
+    top: 330%;
+    left: 5%;
+    z-index: 2;
+}
+
+.frostBox4{
+    height: 30vh;
+    width: 65vh;
+    background: rgba(143, 143, 143, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(54, 54, 54, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: absolute;
+    top: 330%;
+    left: 60%;
+    z-index: 2;
+}
