@@ -240,6 +240,28 @@ body{
     z-index: 1;
 }
 
+.frostcircle5{
+    height: 300px;
+    width: 300px;
+    border-radius: 55%;
+    background-color: rgb(27, 255, 103);
+    position: absolute;
+    top: 259%;
+    left: 78%;
+    z-index: 1;
+}
+
+.frostcircle6{
+    height: 230px;
+    width: 230px;
+    border-radius: 55%;
+    background-color:  rgb(82, 247, 76);
+    position: absolute;
+    top: 280%;
+    left: 55%;
+    z-index: 1;
+}
+
 .featuretext1{
     position: absolute;
     top: 266%;
