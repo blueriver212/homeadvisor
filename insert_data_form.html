@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is an example insert form for a review</title>
+    <!-- CSS only -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            width: 50%;
+            height: 50%;
+            top: 30%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="reviewBtn">Sign in</button>
+    </form>
+    <section>
+        <p id="res"></p>
+    </section>
+    <script>
+
+        reviewBtn.addEventListener('click', function() {
+            let address_1 = document.getElementById('inputAddress').value;
+            let address_2 = document.getElementById('inputAddress2').value;
+            let key = "AIzaSyAYGb_StXeIrAA-juKWdqC0oKpUsBZfWus";
+
+            https://maps.googleapis.com/maps/api/geocode/json?address=grange+house,south+tawton&key=
+
+            var url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address_1}+${address_2}&key=${key}`;
+
+            var latlng;
+
+            console.log(url);
+
+            // $.ajax({
+            //     url:url,
+            //     crossDomain: true,
+            //     type: "GET",
+            //     success: function (res) {
+            //         var lat = res.results[0].geometry.location.lat;
+            //         var lng = res.results[0].geometry.location.lng;
+
+
+            //         var latlng = `their lat is ${lat}, their lng is ${lng}`;
+
+            //         document.getElementById('res').innerHTML = `<p>${latlng}</p>`;
+
+            //     }
+            // })
+            
+            // var x = 50.7339732;
+            // var y = -3.91028;
+            const transform = transformation('EPSG:4326', '227700') // WGS 84 to Soldner Berlin
+                    console.log(transform.forward({x: 50.7339732, y: -3.91028}))
+        })
+    </script>
+</body>
+</html>
