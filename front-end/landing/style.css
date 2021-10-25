@@ -10,7 +10,7 @@ body, html{
 body{
     text-align: center;
     width: 1024px;
-    height: 3000px;
+    height: 3500px;
     background-color: rgb(255, 255, 255);
     display: flex;
 }
@@ -373,4 +373,82 @@ body{
     top: 330%;
     left: 60%;
     z-index: 2;
+}
+
+.featuretext3{
+    position: absolute;
+    top: 325%;
+    left: 6%;
+    z-index: 4;
+    font-size: 10vh;
+}
+
+.featuretext4{
+    position: absolute;
+    top: 325%;
+    left: 61%;
+    z-index: 4;
+    font-size: 10vh;
+}
+
+.featurePara3{
+    position: absolute;
+    top: 341%;
+    left: 61%;
+    z-index: 4;
+    font-size: 3vh;
+    text-align: left !important;
+}
+
+.featurePara4{
+    position: absolute;
+    top: 341%;
+    left: 6%;
+    z-index: 4;
+    font-size: 3vh;
+    text-align: left !important;
+}
+
+.frostcircle7{
+    height: 315px;
+    width: 315px;
+    border-radius: 55%;
+    background-color: rgb(240, 94, 94);
+    position: absolute;
+    top: 335%;
+    left: 55%;
+    z-index: 1;
+}
+
+.frostcircle8{
+    height: 225px;
+    width: 225px;
+    border-radius: 55%;
+    background-color:  rgba(233, 53, 53, 0.966);
+    position: absolute;
+    top: 320%;
+    left: 82%;
+    z-index: 1;
+}
+
+.frostcircle9{
+    height: 315px;
+    width: 315px;
+    border-radius: 55%;
+    background-color: rgb(240, 94, 94);
+    position: absolute;
+    top: 322%;
+    left: 3%;
+    z-index: 1;
+}
+
+.frostcircle10{
+    height: 225px;
+    width: 225px;
+    border-radius: 55%;
+    background-color:  rgba(233, 53, 53, 0.966);
+    position: absolute;
+    top: 342%;
+    left: 28%;
+    z-index: 1;
 }
