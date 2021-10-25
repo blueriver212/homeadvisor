@@ -53,10 +53,7 @@ body{
     border: 0.1px solid;
     color: grey;
     background-color: rgba(255, 255, 255, 0.493);
-}
-
-.button0{
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>%F0%9F%8E%89</text></svg>"), auto !important;
+    font-size: 1.5vh
 }
 
 .topName{
@@ -83,11 +80,13 @@ body{
     margin: 4px 2px;
     cursor: pointer;
     width: 15vh;
-    height: 40px;
+    height: 4.5vh;
     position: absolute;
-    left: 27%;
+    left: 27.25%;
     top: 65.7%;
     font-weight: normal;
+    font-size: 1.7vh;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>%F0%9F%8E%89</text></svg>"), auto !important;
 }
 
 .egMap{
@@ -96,6 +95,8 @@ body{
     right: 0%;
     border-radius: 16px 0px 0px 0px;
     background: linear-gradient(150deg, #fff, transparent);
+    height: 70vh;
+    width: 115vh
 }
 
 .para0{
@@ -175,8 +176,8 @@ body{
 }
 
 .frostcircle{
-    height: 250px;
-    width: 250px;
+    height: 30vh;
+    width: 30vh;
     border-radius: 55%;
     background-color: rgb(76, 88, 247);
     backdrop-filter: blur( 7.5px );
@@ -188,8 +189,8 @@ body{
 }
 
 .frostcircle0{
-    height: 300px;
-    width: 300px;
+    height: 35vh;
+    width: 35vh;
     border-radius: 55%;
     background-color: rgb(76, 170, 247);
     backdrop-filter: blur( 7.5px );
@@ -201,8 +202,8 @@ body{
 }
 
 .frostcircle1{
-    height: 350px;
-    width: 350px;
+    height: 36vh;
+    width: 36vh;
     border-radius: 55%;
     background-color: rgb(27, 171, 255);
     position: absolute;
@@ -212,8 +213,8 @@ body{
 }
 
 .frostcircle2{
-    height: 260px;
-    width: 260px;
+    height: 29vh;
+    width: 29vh;
     border-radius: 55%;
     background-color:  rgb(76, 136, 247);
     position: absolute;
@@ -223,8 +224,8 @@ body{
 }
 
 .frostcircle3{
-    height: 340px;
-    width: 340px;
+    height: 36vh;
+    width: 36vh;
     border-radius: 55%;
     background-color: rgb(27, 255, 57);
     position: absolute;
@@ -234,8 +235,8 @@ body{
 }
 
 .frostcircle4{
-    height: 230px;
-    width: 230px;
+    height: 30vh;
+    width: 30vh;
     border-radius: 55%;
     background-color:  rgb(76, 247, 119);
     position: absolute;
@@ -245,8 +246,8 @@ body{
 }
 
 .frostcircle5{
-    height: 300px;
-    width: 300px;
+    height: 26vh;
+    width: 26vh;
     border-radius: 55%;
     background-color: rgb(27, 255, 103);
     position: absolute;
@@ -256,8 +257,8 @@ body{
 }
 
 .frostcircle6{
-    height: 230px;
-    width: 230px;
+    height: 23vh;
+    width: 23vh;
     border-radius: 55%;
     background-color:  rgb(82, 247, 76);
     position: absolute;
@@ -414,8 +415,8 @@ body{
 }
 
 .frostcircle7{
-    height: 315px;
-    width: 315px;
+    height: 28vh;
+    width: 28vh;
     border-radius: 55%;
     background-color: rgb(240, 94, 94);
     position: absolute;
@@ -425,8 +426,8 @@ body{
 }
 
 .frostcircle8{
-    height: 225px;
-    width: 225px;
+    height: 24vh;
+    width: 24vh;
     border-radius: 55%;
     background-color:  rgba(233, 53, 53, 0.966);
     position: absolute;
@@ -436,8 +437,8 @@ body{
 }
 
 .frostcircle9{
-    height: 315px;
-    width: 315px;
+    height: 30vh;
+    width: 30vh;
     border-radius: 55%;
     background-color: rgb(240, 94, 94);
     position: absolute;
@@ -447,8 +448,8 @@ body{
 }
 
 .frostcircle10{
-    height: 225px;
-    width: 225px;
+    height: 24vh;
+    width: 24vh;
     border-radius: 55%;
     background-color:  rgba(233, 53, 53, 0.966);
     position: absolute;
