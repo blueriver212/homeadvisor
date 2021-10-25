@@ -55,6 +55,10 @@ body{
     background-color: rgba(255, 255, 255, 0.493);
 }
 
+.button0{
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>%F0%9F%8E%89</text></svg>"), auto !important;
+}
+
 .topName{
     z-index: 5;
     font-weight: normal;
@@ -451,4 +455,15 @@ body{
     top: 342%;
     left: 28%;
     z-index: 1;
+}
+
+/* centerline is a placeholder for another thing im designing */
+.centerline{
+    background-color: black;
+    height: 155vh;
+    width: 0.5vh;
+    position: absolute;
+    top: 205%;
+    left: 50%;
+    border-radius: 32px;
 }
