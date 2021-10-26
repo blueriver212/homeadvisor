@@ -122,6 +122,8 @@
           
             let address_1 = document.getElementById('address_1').value;
             let address_2 = document.getElementById('address_2').value;
+            var lat;
+            var lng;
             
             // test if there are any whitespaces
             // then make a string of all of words with a + imbetween
@@ -152,8 +154,8 @@
                 success: function (res) {
                   console.log(url);
 
-                    var lat = res.results[0].geometry.location.lat;
-                    var lng = res.results[0].geometry.location.lng;
+                    lat = res.results[0].geometry.location.lat;
+                    lng = res.results[0].geometry.location.lng;
 
 
                     var latlng = `their lat is ${lat}, their lng is ${lng}`;
@@ -162,17 +164,6 @@
 
                 }
             });
-            
-            var x = 50.7339732;
-            var y = -3.91028;
-            var coords1 = [y, x];
-            
-            // var first_projection = "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs";
-            // var second_projection = "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs ";
-            
-            // console.log(proj4(first_projection, second_projection, coords));
-            // console.log(proj4(first_projection, second_projection, coords1));
-
 
             var ll_type = document.getElementById('ll_type');
             ll_type = ll_type.value;
@@ -204,6 +195,35 @@
           var comments = document.getElementById('comments').value;
 
           
+
+          // create the url for the crud route to insert the data
+          var post_url = `https://localhost:3000/`;
+          
+          var postString = post_url +  `building_type=${building_type}`;
+          postString = postString + `&ll_type=${ll_type}`;
+          postString = postString + `&rent_cost=${rent_cost}`;
+          postString = postString + `&bills_cost=${bills_cost}`;
+          postString = postString + `&student=${student}`;
+          postString = postString + `&ll_rating_honesty=${ll_rating_honesty}`;
+          postString = postString + `&ll_rating_clean=${ll_rating_clean}`;
+          postString = postString + `&house_rating_close_amenities=${house_rating_close_amenities}`;
+          postString = postString + `&house_rating_quiet=${house_rating_quiet}`;
+          postString = postString + `&house_rating_security=${house_rating_security}`;
+          postString = postString + `&comments=${comments}`;
+          postString = postString + `&lng=${lng}`;
+          postString = postString + `&lat=${lat}`;
+
+          console.log(postString);
+
+
+          // $.ajax({
+          //   url:url,
+          //   crossDomain: true,
+          //   type: "POST",
+          //   data: postString, 
+          //   success: function (data
+          //   }
+          // }
 
               
 
