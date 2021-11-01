@@ -1,0 +1,31 @@
+{
+  "name": "homeadvisor",
+  "version": "1.0.0",
+  "description": "This is the app side for the student review system",
+  "main": "app.js",
+  "scripts": {
+    "preinstall": "npm config set package-lock false",
+    "build": "browserify app.js -0 bundle.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "Indigo Brownhall",
+  "license": "Personal",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "openssl": "^1.1.0",
+    "pg": "^8.6.0",
+    "transform-coordinates": "^1.0.0"
+  },
+  "engines": {
+    "node": "14.17.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}

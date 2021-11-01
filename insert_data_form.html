@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is an example insert form for a review</title>
+    <!-- CSS only -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="proj4.js"></script>
+    <style>
+        body {
+            width: 50%;
+            height: 50%;
+            top: 30%;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="ll_type" required>Landlord Type</label>
+            <select required id="ll_type" class="form-control">
+              <option selected>Choose...</option>
+              <option>Private</option>
+              <option>Letting Agent</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="building_type" required>Building Type</label>
+            <select id="building_type" class="form-control">
+              <option selected>Choose...</option>
+              <option >House</option>
+              <option>Flat</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Move In Date</label>
+            <input required type="date" class="form-control" id="movein_year" placeholder="Move In Date">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputPassword4">Move Out Year</label>
+            <input required type="date" class="form-control" id="moveout_year" placeholder="Move Out Year">
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputAddress">Rent Cost</label>
+          <INPUT required id="rent_cost" placeholder="£ per Month" onkeypress="return isNumberKey(event)"   type="text" name="txtNumber">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputAddress">Bills Cost</label>
+          <INPUT required id="bills_cost" placeholder="£ per Month" onkeypress="return isNumberKey(event)"   type="text" name="txtNumber">
+        </div>
+        <div class="form-check col-md-4">
+          <input class="form-check-input" type="checkbox" value="" id="student">
+          <label class="form-check-label" for="defaultCheck1">
+            Are you a student?
+          </label>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="ll_rating_honesty">Landlord Rating: Honesty</label>
+          <INPUT required id="ll_rating_honesty" placeholder="1-5" onkeypress="return isNumberKey(event)"   type="text" name="txtNumber">
+        </div>    
+        <div class="form-group col-md-4">
+          <label for="ll_rating_clean">Landlord Rating: Honesty</label>
+          <INPUT required id="ll_rating_clean" placeholder="1-5" onkeypress="return isNumberKey(event)"   type="text" name="txtNumber">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="ll_rating_honesty">ll_rating_honesty</label>
+          <input required type="text" class="form-control" id="ll_rating_honesty" placeholder="1-5" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="ll_rating_clean">ll_rating_clean</label>
+          <input required type="text" class="form-control" id="ll_rating_clean" placeholder="1-5" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="house_rating_close_amenities">house_rating_close_amenities</label>
+          <input required type="text" class="form-control" id="house_rating_close_amenities" placeholder="1-5" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="house_rating_quiet">house_rating_quiet</label>
+          <input required type="text" class="form-control" id="house_rating_quiet" placeholder="1-5" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="house_rating_security">house_rating_security</label>
+          <input required type="text" class="form-control" id="house_rating_security" placeholder="1-5" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="comments">comments</label>
+          <input required type="text" class="form-control" id="comments" placeholder="Any commetns" required>
+        </div>
+        <p>Add the location of the house </p>
+        <fieldset>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="address_1">Address 1</label>
+              <input type="text" class="form-control" id="address_1">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="address_2">Address 2</label>
+              <input type="text" class="form-control" id="address_2">
+            </div>
+            <!-- <div class="form-group col-md-4">
+              <label for="post_code">PostCode</label>
+              <input type="text" class="form-control" id="post_code">
+            </div> -->
+          </div>
+      </fieldset>
+        <button type="submit" class="btn btn-primary" id="reviewBtn">Sign in</button>
+      </article>
+    <section>
+        <p id="res"></p>
+    </section>
+    <script>
+
+
+        reviewBtn.addEventListener('click', function() {
+            // this function is to test what a possible insert form could look like
+          
+            let address_1 = document.getElementById('address_1').value;
+            let address_2 = document.getElementById('address_2').value;
+            var lat;
+            var lng;
+            
+            // test if there are any whitespaces
+            // then make a string of all of words with a + imbetween
+
+            if (/\s/.test(address_1)) {
+              // It has any kind of whitespace
+              var address1_arr = address_1.split(" ");
+              address_1 = address1_arr.join('+');   
+            }
+
+            if (/\s/.test(address_2)) {
+              // It has any kind of whitespace
+              var address2_arr = address_2.split(" ");
+              address_2 = address2_arr.join('+');   
+            }
+
+
+            //let post_code = document.getElementById('post_code').value;
+            let key = "AIzaSyAYGb_StXeIrAA-juKWdqC0oKpUsBZfWus";
+            var latlng;
+            // // url for the geocoder from address to lat lng
+            var url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address_1}+${address_2}}&key=${key}`;
+            
+            $.ajax({
+                url:url,
+                crossDomain: true,
+                type: "GET",
+                success: function (res) {
+                  console.log(url);
+
+                    lat = res.results[0].geometry.location.lat;
+                    lng = res.results[0].geometry.location.lng;
+
+
+                    var latlng = `their lat is ${lat}, their lng is ${lng}`;
+                    console.log(latlng);
+                    document.getElementById('res').innerHTML = `<p>${latlng}</p>`;
+
+                }
+            });
+
+            var ll_type = document.getElementById('ll_type');
+            ll_type = ll_type.value;
+
+            var building_type = document.getElementById('building_type');
+            building_type = building_type.value;
+
+            var rent_cost = document.getElementById('rent_cost');
+            rent_cost = Math.floor(parseInt(rent_cost.value));
+
+            var bills_cost = document.getElementById('bills_cost');
+            bills_cost = Math.floor(parseInt(bills_cost.value));
+
+            // var test = document.getElementById('student').value;
+
+            // console.log(test);
+          var student;
+          if ($(student).is(':checked')) {
+            student = 'true';
+          } else {
+            student = 'false';
+          }
+
+          var ll_rating_honesty = parseInt(document.getElementById('ll_rating_honesty').value);
+          var ll_rating_clean = parseInt(document.getElementById('ll_rating_clean').value);
+          var house_rating_close_amenities = parseInt(document.getElementById('house_rating_close_amenities').value);
+          var house_rating_quiet = parseInt(document.getElementById('house_rating_quiet').value);
+          var house_rating_security = parseInt(document.getElementById('house_rating_security').value);
+          var comments = document.getElementById('comments').value;
+
+          
+
+          // create the url for the crud route to insert the data
+          var post_url = `https://localhost:3000/`;
+          
+          var postString = post_url +  `building_type=${building_type}`;
+          postString = postString + `&ll_type=${ll_type}`;
+          postString = postString + `&rent_cost=${rent_cost}`;
+          postString = postString + `&bills_cost=${bills_cost}`;
+          postString = postString + `&student=${student}`;
+          postString = postString + `&ll_rating_honesty=${ll_rating_honesty}`;
+          postString = postString + `&ll_rating_clean=${ll_rating_clean}`;
+          postString = postString + `&house_rating_close_amenities=${house_rating_close_amenities}`;
+          postString = postString + `&house_rating_quiet=${house_rating_quiet}`;
+          postString = postString + `&house_rating_security=${house_rating_security}`;
+          postString = postString + `&comments=${comments}`;
+          postString = postString + `&lng=${lng}`;
+          postString = postString + `&lat=${lat}`;
+
+          console.log(postString);
+
+
+          // $.ajax({
+          //   url:url,
+          //   crossDomain: true,
+          //   type: "POST",
+          //   data: postString, 
+          //   success: function (data
+          //   }
+          // }
+
+              
+
+
+        })
+
+    // only allow buttons to be numbers for the rent cost
+    function isNumberKey(evt)
+			{
+				var charCode = (evt.which) ? evt.which : evt.keyCode;
+				if (charCode != 46 && charCode > 31 
+				&& (charCode < 48 || charCode > 57))
+				return false;
+				return true;
+			}  
+			
+    </script>
+</body>
+</html>
