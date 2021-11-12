@@ -19,11 +19,49 @@
         .formbox1{
           height: 30vh;
           width: 170vh;
-          background-color: #88888849;
+          background: rgba(221, 221, 221, 0.3);
+          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 5px );
+          -webkit-backdrop-filter: blur( 5px );
+          border-radius: 10px;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );
           border-radius: 5vh;
           position: absolute;
           top: 10%;
-          left: 10%
+          left: 10%;
+          z-index: 1
+        }
+
+        .formbox2{
+          height: 30vh;
+          width: 170vh;
+          background: rgba(221, 221, 221, 0.3);
+          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 5px );
+          -webkit-backdrop-filter: blur( 5px );
+          border-radius: 10px;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );
+          border-radius: 5vh;
+          position: absolute;
+          top: 50%;
+          left: 10%;
+          z-index: 1
+        }
+
+        .formbox3{
+          height: 30vh;
+          width: 170vh;
+          background: rgba(221, 221, 221, 0.3);
+          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 5px );
+          -webkit-backdrop-filter: blur( 5px );
+          border-radius: 10px;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );
+          border-radius: 5vh;
+          position: absolute;
+          top: 90%;
+          left: 10%;
+          z-index: 1
         }
 
         .formcircle1{
@@ -38,44 +76,137 @@
           border-color: rgb(65, 65, 65)
         }
 
+        .formcircle2{
+          height: 7vh;
+          width: 7vh;
+          position: absolute;
+          top: 52%;
+          left: 12%;
+          border-radius: 50%;
+          border: 0.2vh solid;
+          z-index: 2;
+          border-color: rgb(65, 65, 65)
+        }
+
+        .formcircle3{
+          height: 7vh;
+          width: 7vh;
+          position: absolute;
+          top: 92%;
+          left: 12%;
+          border-radius: 50%;
+          border: 0.2vh solid;
+          z-index: 2;
+          border-color: rgb(65, 65, 65)
+        }
+
+        .formtitle2{
+          position: absolute;
+          left: 13.1%;
+          top: 52.8%;
+          z-index: 2
+        }
+
         .formtitle1{
           position: absolute;
           left: 13.2%;
           top: 13%;
+          z-index: 2
+        }
+
+        .formtitle3{
+          position: absolute;
+          left: 13.1%;
+          top: 92.9%;
+          z-index: 2
         }
 
         #house_rating_quiet{
           position: absolute;
-          color: red
+          color: red;
+          z-index: 0
         }
 
         #building_type{
           position: absolute;
           top: 200%;
-          left: 7%
+          left: 7%;
+          z-index: 2
         }
 
         #ll_type{
           position: absolute;
           top: 300%;
-          left: 107%
+          left: 107%;
+          padding: 1vh;
+          z-index: 2
         }
 
         .formsubtitle{
           position: absolute;
           top: 13%;
-          left: 17%
+          left: 17%;
+          z-index: 2
+        }
+
+        .formsubtitle2{
+          position: absolute;
+          top: 53%;
+          left: 17%;
+          z-index: 2
+        }
+
+        .formsubtitle3{
+          position: absolute;
+          top: 93%;
+          left: 17%;
+          z-index: 2
+        }
+
+        .circle0{
+          height: 30vh;
+          width: 30vh;
+          border-radius: 50%;
+          background-color: red;
+          position: absolute;
+          left: 30%;
+          z-index: 0
+        }
+
+        .progressLine{
+          height: 100vh;
+          width: 0.5vh;
+          background-color: black;
+          border-radius: 20vh;
+          position: absolute;
+          left: 5%;
+          top: 17%
         }
 
     </style>
 </head>
 <body>
   <h1 class="title">Submission Form</h1>
+
   <h1 class="formtitle1">1</h1>
   <h1 class="formsubtitle">About your stay.</h1>
 
+  <h1 class="formtitle2">2</h1>
+  <h1 class="formsubtitle2">How was your stay?</h1>
+
+  <h1 class="formtitle3">3</h1>
+  <h1 class="formsubtitle3">Basic info.</h1>
+
+  <div class="progressLine"></div>
+  <div class="circle0"></div>
+
   <div class="formcircle1"></div>
+  <div class="formcircle2"></div>
+  <div class="formcircle3"></div>
+
   <div class="formbox1"></div>
+  <div class="formbox2"></div>
+  <div class="formbox3"></div>
     <article>
         <div class="form-row">
           <div class="form-group col-md-4">
